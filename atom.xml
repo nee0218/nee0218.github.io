@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://nee0218.dizent.cn/"/>
-  <updated>2020-05-29T09:25:24.619Z</updated>
-  <id>http://nee0218.dizent.cn/</id>
+  <link href="http://www.neqiang0218.top/"/>
+  <updated>2020-05-29T15:33:22.219Z</updated>
+  <id>http://www.neqiang0218.top/</id>
   
   <author>
     <name>nee0218</name>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>安装hexo以及简单配置</title>
-    <link href="http://nee0218.dizent.cn/2020/05/29/%E5%AE%89%E8%A3%85Hexo/"/>
-    <id>http://nee0218.dizent.cn/2020/05/29/%E5%AE%89%E8%A3%85Hexo/</id>
+    <link href="http://www.neqiang0218.top/2020/05/29/%E5%AE%89%E8%A3%85hexo%E4%BB%A5%E5%8F%8A%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE/"/>
+    <id>http://www.neqiang0218.top/2020/05/29/%E5%AE%89%E8%A3%85hexo%E4%BB%A5%E5%8F%8A%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE/</id>
     <published>2020-05-29T04:00:00.000Z</published>
-    <updated>2020-05-29T09:25:24.619Z</updated>
+    <updated>2020-05-29T15:33:22.219Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h1><p>在安装 Hexo 之前，你需要安装以下两个工具：</p><ul><li>Git</li><li>Node.js</li></ul><p>如果您已经安装好以上两个工具，可以直接跳转至 安装 Hexo。</p><h2 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h2><ul><li>Windows：下载并安装 git.</li><li>Mac：使用 Homebrew, MacPorts ： brew install git ; 或下载 安装程序 安装。</li><li>Linux (Ubuntu, Debian)： sudo apt-get install git-core</li><li>Linux (Fedora, Red Hat, CentOS)： sudo yum install git-core</li><li>Linux (Arch 系列)： sudo pacman -S git</li></ul><blockquote><p>提醒</p><p>由于墙的原因，从上面的链接下载 git for windows 最好挂上一个代理，否则下载速度十分缓慢。也可以参考这个页面，收录了存储于百度云的下载地址。</p></blockquote><blockquote><p>提醒</p><p>如果你是 CentOS 服务器上的，可以直接使用 HexoOneClickInstallation 这个脚本快速安装 Hexo。</p></blockquote><h1 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h1><p>安装 Node.js 的最佳方式是使用 nvm。</p><p>cURL:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ curl https:&#x2F;&#x2F;raw.github.com&#x2F;creationix&#x2F;nvm&#x2F;v0.33.11&#x2F;install.sh | sh</span><br></pre></td></tr></table></figure><p>Wget:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ wget -qO- https:&#x2F;&#x2F;raw.github.com&#x2F;creationix&#x2F;nvm&#x2F;v0.33.11&#x2F;install.sh | sh</span><br></pre></td></tr></table></figure><p>安装完成后，重启终端并执行下列命令即可安装 Node.js。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nvm install stable</span><br></pre></td></tr></table></figure><p>或者您也可以下载 安装程序 来安装。</p><h1 id="安装-Hexo-1"><a href="#安装-Hexo-1" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h1><p>安装好后，即可使用 npm 完成 Hexo 的安装。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure><h1 id="建立网站"><a href="#建立网站" class="headerlink" title="建立网站"></a>建立网站</h1><p>安装好 Hexo 后即可建立你的网站。</p><p>首先建立一个文件夹。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir &lt;your_blog_name&gt;  # 建立你的网站根目录，名字可以自己修改</span><br></pre></td></tr></table></figure><p>然后往这个文件夹里安装 Hexo。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;your_blog_name&gt;</span><br></pre></td></tr></table></figure><p>这样就建立好网站了！</p><h1 id="配置-Hexo"><a href="#配置-Hexo" class="headerlink" title="配置 Hexo"></a>配置 Hexo</h1><blockquote><p>警告</p><p>此部分内容可能过期，请见 <a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">Hexo 官方文档</a>。</p></blockquote><h2 id="博客预览"><a href="#博客预览" class="headerlink" title="博客预览"></a>博客预览</h2><p>下面是我的<code>Hexo</code>博客预览,主题使用<code>Butterfly</code>。</p><p><img src="https://imgkr.cn-bj.ufileos.com/bd300dbe-30b1-4739-9159-d5640a61ab19.png" alt=""></p>]]></content>
     
@@ -39,9 +39,53 @@
   </entry>
   
   <entry>
+    <title>hexo上传图片并加入文章</title>
+    <link href="http://www.neqiang0218.top/2020/05/29/hexo%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E5%B9%B6%E5%8A%A0%E5%85%A5%E6%96%87%E7%AB%A0/"/>
+    <id>http://www.neqiang0218.top/2020/05/29/hexo%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E5%B9%B6%E5%8A%A0%E5%85%A5%E6%96%87%E7%AB%A0/</id>
+    <published>2020-05-29T04:00:00.000Z</published>
+    <updated>2020-05-29T15:35:27.584Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="上传图片"><a href="#上传图片" class="headerlink" title="上传图片"></a>上传图片</h1><h2 id="准备图片"><a href="#准备图片" class="headerlink" title="准备图片"></a>准备图片</h2><p><img src="https://imgkr.cn-bj.ufileos.com/d3cfda5d-786e-43af-a875-ea2cf88b8a89.png" alt=""></p><h2 id="上传图片到图床"><a href="#上传图片到图床" class="headerlink" title="上传图片到图床"></a>上传图片到图床</h2><blockquote><p>使用网络公开的图床API上传图片，获取网络地址</p></blockquote><p><img src="https://imgkr.cn-bj.ufileos.com/4165f9aa-3304-4fe9-ace1-0c683a72913b.png" alt=""></p><h2 id="使用markdown格式插入图片"><a href="#使用markdown格式插入图片" class="headerlink" title="使用markdown格式插入图片"></a>使用markdown格式插入图片</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![头像](https:&#x2F;&#x2F;imgkr.cn-bj.ufileos.com&#x2F;41886611-970f-4e2b-a856-9f81c047d88e.png)</span><br></pre></td></tr></table></figure><p><strong>效果如图：</strong></p><p><img src="https://imgkr.cn-bj.ufileos.com/41886611-970f-4e2b-a856-9f81c047d88e.png" alt="头像"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>部署hexo到GitHub以及自定义域名</title>
+    <link href="http://www.neqiang0218.top/2020/05/29/%E9%83%A8%E7%BD%B2hexo%E5%88%B0github%E4%BB%A5%E5%8F%8A%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/"/>
+    <id>http://www.neqiang0218.top/2020/05/29/%E9%83%A8%E7%BD%B2hexo%E5%88%B0github%E4%BB%A5%E5%8F%8A%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/</id>
+    <published>2020-05-29T04:00:00.000Z</published>
+    <updated>2020-05-29T15:35:56.529Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="部署-Hexo"><a href="#部署-Hexo" class="headerlink" title="部署 Hexo"></a>部署 Hexo</h1><h2 id="部署到-GitHub"><a href="#部署到-GitHub" class="headerlink" title="部署到 GitHub"></a>部署到 GitHub</h2><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="#准备工作"></a>#准备工作</h2><p>如果没有账号，请点此前往 GitHub 注册一个 GitHub 账号。</p><p>新建一个公开仓库，仓库名格式为 your_username.github.io 例如你的 GitHub 用户名是 easyhexo ，那么你的仓库地址名称就应该是 easyhexo.github.io</p><p>创建完成后记下该仓库的 HTTPS/SSH 地址，一般格式为 <a href="https://github.com/your_username/your_reponame.git" target="_blank" rel="noopener">https://github.com/your_username/your_reponame.git</a> 在下一步会用到。</p><h3 id="安装部署插件"><a href="#安装部署插件" class="headerlink" title="安装部署插件"></a>安装部署插件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line">$ npm install hexo-server --save</span><br></pre></td></tr></table></figure><h3 id="配置-Git"><a href="#配置-Git" class="headerlink" title="配置 Git"></a>配置 Git</h3><p>如果你只是安装好了 Git 但没有配置过你的 Git ，那么现在需要做的第一件事情就是设置你的 Git 用户名和邮箱。 在 Git Bash 中执行以下两条命令配置你的用户名和邮箱，这里建议用户名和邮箱与你的 GitHub 用户名和邮箱保持一致。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;Your_user_name&quot;</span><br><span class="line">$ git config --global user.email Your_email@example.com</span><br></pre></td></tr></table></figure><blockquote><p>提醒</p><p>每次 Git 提交时都会附带这两条信息，用于记录是谁提交的更新，并且会随更新内容一起被记录到历史记录中。简单说，是用来标记的你的身份的～</p></blockquote><h3 id="配置站点-config-yml-文件"><a href="#配置站点-config-yml-文件" class="headerlink" title="配置站点 _config.yml 文件"></a>配置站点 _config.yml 文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git # 类型填git</span><br><span class="line">  repo: &lt;repository url&gt; # 你的Github仓库地址</span><br><span class="line">  branch: master # 分支名称。默认填写 master 如果您使用的是 GitHub ，程序会尝试自动检测。</span><br><span class="line">  message: # 提交信息可以自定义，不填的则默认为提交时间</span><br></pre></td></tr></table></figure><h3 id="发布到-GitHub"><a href="#发布到-GitHub" class="headerlink" title="发布到 GitHub"></a>发布到 GitHub</h3><p>在本地的 Hexo 站点根目录下，执行如下命令即可部署到 GitHub Pages 上。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo d -g</span><br></pre></td></tr></table></figure><blockquote><p>提醒</p><p>如果是第一次使用，会弹出一个登录框，需要登录你的 GitHub 账号。</p></blockquote><h2 id="自定义域名"><a href="#自定义域名" class="headerlink" title="自定义域名"></a>自定义域名</h2><p>如果你拥有个人域名，请用 A 记录解析到以下 IP 中的任意一个。如果使用 CNAME 请解析到你的 GitHub 仓库名称。</p><ul><li>185.199.108.153</li><li>185.199.109.153</li><li>185.199.110.153</li><li>185.199.111.153</li></ul><p><strong>参考表格</strong></p><table><thead><tr><th>记录类型</th><th>主机记录</th><th>解析路线</th><th>记录值</th><th>MAX 优先级</th><th>TTL（秒）</th></tr></thead><tbody><tr><td>A</td><td>@</td><td>默认</td><td>185.199.110.153</td><td>-</td><td>600</td></tr><tr><td>CNAME</td><td>@</td><td>默认</td><td>GitHub博客仓库名称</td><td>-</td><td>600</td></tr></tbody></table><p>打开仓库设置，找到 GitHub Pages 项目，修改 Custom domain 选项的值为你的自定义域名（不带 http 等前缀）</p><p>勾选 Custom domain 选项下的 Enforce HTTPS 选项，强制开启 Https 。如果遇到 Enforce HTTPS 选项无法打开，可以稍等一会儿再尝试。</p><blockquote><p>提醒</p><p>同时需要在本地的 source 目录新建一个 CNAME 文件，内容为你的自定义域名（不带 http 等前缀）。否则无法使用自定义域名功能（ hexo d 生成的文件没有 CNAME 文件，导致仓库的自定域名设置失效）</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>认识hexo</title>
-    <link href="http://nee0218.dizent.cn/2020/05/29/%E8%AE%A4%E8%AF%86Hexo/"/>
-    <id>http://nee0218.dizent.cn/2020/05/29/%E8%AE%A4%E8%AF%86Hexo/</id>
+    <link href="http://www.neqiang0218.top/2020/05/29/%E8%AE%A4%E8%AF%86Hexo/"/>
+    <id>http://www.neqiang0218.top/2020/05/29/%E8%AE%A4%E8%AF%86Hexo/</id>
     <published>2020-05-29T04:00:00.000Z</published>
     <updated>2020-05-29T09:25:41.098Z</updated>
     
@@ -62,8 +106,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://nee0218.dizent.cn/2020/05/27/hello-world/"/>
-    <id>http://nee0218.dizent.cn/2020/05/27/hello-world/</id>
+    <link href="http://www.neqiang0218.top/2020/05/27/hello-world/"/>
+    <id>http://www.neqiang0218.top/2020/05/27/hello-world/</id>
     <published>2020-05-27T11:44:18.488Z</published>
     <updated>2020-05-27T14:18:06.035Z</updated>
     
