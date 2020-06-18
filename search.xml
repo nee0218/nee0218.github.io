@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>led矩阵的服务特性</title>
+      <link href="/2020/06/18/led%E7%9F%A9%E9%98%B5%E7%9A%84%E6%9C%8D%E5%8A%A1%E7%89%B9%E6%80%A7/"/>
+      <url>/2020/06/18/led%E7%9F%A9%E9%98%B5%E7%9A%84%E6%9C%8D%E5%8A%A1%E7%89%B9%E6%80%A7/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="操作一："><a href="#操作一：" class="headerlink" title="操作一："></a>操作一：</h2><p>led矩阵板子连接成功后，相对应的服务uuid号一致则说明我们的服务已添加成功。</p><p><img src="https://static01.imgkr.com/temp/fd278f8bc1e74b1ba9570629f223c356.png" alt=""></p><h2 id="操作二："><a href="#操作二：" class="headerlink" title="操作二："></a>操作二：</h2><p>在我们第一课时“蓝牙连接”编写代码的基础上添加一些代码程序，以下是所要添加的代码程序</p><p><img src="https://static01.imgkr.com/temp/e708133339e04d428a065118ef57188c.png" alt=""></p><h2 id="操作三："><a href="#操作三：" class="headerlink" title="操作三："></a>操作三：</h2><h3 id="代码解析："><a href="#代码解析：" class="headerlink" title="代码解析："></a>代码解析：</h3><p>1.开头添加的是标志变量，用于核对bbc microbit有没有相应的服务<br><img src="https://static01.imgkr.com/temp/37f84186882145cfaeddb97b67ce4a33.png" alt=""></p><p>而后三行是用于核对特性是否存在<br><img src="https://static01.imgkr.com/temp/759906a4da964f1d87534fd8dfb32bd9.png" alt=""></p><p> service UUIDs和characteristic UUIDs用于核对板子的特性和服务来进行连接。<br> service_count,characteristic_count是服务和特性发现的数量。 </p><p> services_discovered,characteristics_discovered是被发现服务和特性的数量</p><p> 2.添加service UUID和characteristic UUID号，用来进行与开发板中服务UUID号进行核对。<br> <img src="https://static01.imgkr.com/temp/50942feda4e3463ea3d142fe51f67f0d.png" alt=""><br> 3.函数function discoverSvcsAndChars()用来发现开发板的服务和特性，使用connected_server.getPrimaryServices()用来获取BBC Microbit板子的主要服务。<br> <img src="https://static01.imgkr.com/temp/6dd588fbea594804b8752e642147b7b4.png" alt=""><br> 4.service_count=services.length是表示发现BBC MicroBit板服务的个数，并将发现的服务打印出来。<br> <img src="https://static01.imgkr.com/temp/786a3082a2394b87ab087053e483a18a.png" alt=""></p><p> 5.已发现的服务通过if进行判断，核对是否一致。完成后uuid打印输出，然后函数 service.getCharacteristics()获取改服务的所有特性，对该特性通过if判断进行核对。<br> <img src="https://static01.imgkr.com/temp/761eb8f8c9044f42920373743361089a.png" alt=""></p><p> 6.最后把发现的服务和特性数量和已发现的服务和特性数量进行核对。如果一致则成功，并打印 FINISHED DISCOVERY。<br> <img src="https://static01.imgkr.com/temp/3e9537c1339b4abab03db17fd979f94d.png" alt=""><br> 7.信息核对成功后，要把setDiscoveryStatus(true)通过函数function setDiscoveryStatus(status)显示出来，表示添加服务及特性成功。<br> <img src="https://static01.imgkr.com/temp/ad2c1dab194b4b2581ea1e853f1eee0f.png" alt=""><br> 8.程序编辑好打开谷歌浏览器，并按F12，查看。发现服务和特性UUID号与开发板一致，连接成功。<br> <img src="https://static01.imgkr.com/temp/23d2075059254be0893965d97833d351.png" alt=""><br> 9.BBC Micbit板子的实验现象：</p><p> <img src="https://static01.imgkr.com/temp/256408dc2ea24b119c80c21aa15c86b1.jpg" alt=""></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>LED矩阵连接设备步骤</title>
       <link href="/2020/06/16/LED%E7%9F%A9%E9%98%B5%E8%BF%9E%E6%8E%A5%E8%AE%BE%E5%A4%87%E6%AD%A5%E9%AA%A4/"/>
       <url>/2020/06/16/LED%E7%9F%A9%E9%98%B5%E8%BF%9E%E6%8E%A5%E8%AE%BE%E5%A4%87%E6%AD%A5%E9%AA%A4/</url>
